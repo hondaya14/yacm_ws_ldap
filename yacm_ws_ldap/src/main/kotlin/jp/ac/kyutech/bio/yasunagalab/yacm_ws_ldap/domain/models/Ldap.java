@@ -27,10 +27,10 @@ public class Ldap {
 
     // Commands
     public static class Commands {
-        private static final String[] addCmd = {"ldapadd", "-x", "-D", "cn=Manager,dc=yasunaga-lab,dc=bio,dc=kyutech,dc=ac,dc=jp", "-W", "-f", "-w", "", "[file path]"};
-        private static final int addCmdArgIndex = 8;
-        private static final String[] delCmd = {"ldapdelete", "-x", "-D", "cn=Manager,dc=yasunaga-lab,dc=bio,dc=kyutech,dc=ac,dc=jp", "-W", "-f", "-w", "", "[file path]"};
-        private static final int delCmdArgIndex = 8;
+        private static final String[] addCmd = {"ldapadd", "-x", "-D", "cn=Manager,dc=yasunaga-lab,dc=bio,dc=kyutech,dc=ac,dc=jp", "-f", "[file path]"};
+        private static final int addCmdArgIndex = 5;
+        private static final String[] delCmd = {"ldapdelete", "-x", "-D", "cn=Manager,dc=yasunaga-lab,dc=bio,dc=kyutech,dc=ac,dc=jp", "-f", "[file path]"};
+        private static final int delCmdArgIndex = 5;
         private static final String[] encryptCmd = {"slappasswd", "-s", "[password]"};
         private static final int encryptArgIndex = 2;
 

@@ -51,7 +51,7 @@ public class LdapUser {
     }
 
     public String encryptPassword(String password) throws IOException, InterruptedException {
-        List<String> result = ExternalInterface.execExternalCommand(Ldap.Commands.generateEncryptCmd(this.password));
+        List<String> result = ExternalInterface.execExternalCommand(Ldap.Commands.generateEncryptCmd(password));
         return result.get(0);
     }
 
