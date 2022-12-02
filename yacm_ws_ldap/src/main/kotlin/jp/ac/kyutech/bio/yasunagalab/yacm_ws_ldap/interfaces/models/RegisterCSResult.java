@@ -19,7 +19,7 @@ public class RegisterCSResult extends Result {
 
     public void setResult(boolean isSuccess, List<String> result, LdapUser ldapUser) {
         super.isSuccess = isSuccess;
-        super.message = isSuccess ? result.toString() : "failed register cs account";
+        super.message = isSuccess ? result.toString() : "Failed register cs account";
         this.ldapUser = ldapUser;
     }
 }
